@@ -20,6 +20,8 @@ public class Pessoa {
 		this.dataNascimento = dataNascimento;
 		this.endereco = endereco;
 		this.genero = genero;
+		
+		
 	}
 	
 	public void imprimirInfoPadrao() 
