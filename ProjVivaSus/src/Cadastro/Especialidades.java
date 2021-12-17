@@ -2,19 +2,20 @@ package Cadastro;
 
 public abstract class Especialidades {
 
-	private String Especialidade;
+	private String Especialidades;
 	
 	abstract public void medico(int nome);
 	abstract public void horario(int horario);
+	abstract public void dia(int dia);
 	
-	public Especialidades(String Especialidade) {
-		this.Especialidade = Especialidade;
+	public Especialidades(String Especialidades) {
+		this.Especialidades = Especialidades;
 	}
 	public String getEspecialidade() {
-		return Especialidade;
+		return Especialidades;
 	}
-	public void setEspecialidade(String especialidade) {
-		Especialidade = especialidade;
+	public void setEspecialidade(String especialidades) {
+		Especialidades = especialidades;
 	}
 	
 }
