@@ -1,6 +1,6 @@
 package Cadastro;
 
-public class ClinicoGeral extends Especialidades {
+public class ClinicoGeral extends Especialidades{
 	
 	public ClinicoGeral() {
 		super("Clinico Geral");
@@ -15,10 +15,10 @@ public class ClinicoGeral extends Especialidades {
 		System.out.println("\nEscolha o médico: "+"\n1-Ana\n2-David");
 		switch(medico) {
 		case 1:
-			System.out.println("\nConsulta agendada com a Dr.Ana");
+			System.out.println("\nConsulta agendada com a Dr. Ana que atende na Rua Barão do Duprat, 323");
 			break;
 		case 2:
-			System.out.println("\nConsulta agendada com a Dr.David");
+			System.out.println("\nConsulta agendada com a Dr. David que atende na Rua Aracatu, 02");
 			break;
 			default:
 			System.out.println("\nInvalido!!");
@@ -42,6 +42,25 @@ public class ClinicoGeral extends Especialidades {
 	@Override
 	public void dia(int dia) {
 		// TODO Auto-generated method stub
-		
+		switch(dia) {
+		case 1:
+			System.out.println("\nConsulta agendada para segunda-feira");
+			break;
+		case 2:
+			System.out.println("\nConsulta agendada para terça-feira");
+			break;
+		case 3:
+			System.out.println("\nConsulta agendada para quarta-feira");
+			break;
+		case 4:
+			System.out.println("\nConsulta agendada para quinta-feira");
+			break;
+		case 5:
+			System.out.println("\nConsulta agendada para sexta-feira");
+			break;
+			default:
+			System.out.println("\nInvalido!!");
+		}
 	}
+
 }
