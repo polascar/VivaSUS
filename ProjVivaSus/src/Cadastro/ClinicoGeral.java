@@ -64,7 +64,7 @@ public class ClinicoGeral extends Especialidades{
 			System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
 			dia = leia.nextInt();
 		}
-		}while(dia>1 && dia<5);
+		}while(dia>0 && dia<=5);
 	}
 	
 	@Override

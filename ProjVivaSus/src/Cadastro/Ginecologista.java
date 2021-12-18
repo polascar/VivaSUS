@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ginecologista extends Especialidades{
 
+	String d, h, m,r;
 	public Ginecologista() {
 		super("Ginecologista");
 	}
@@ -19,7 +20,7 @@ public class Ginecologista extends Especialidades{
 			System.out.println("\nObs. Dr.Sandra atende na rua Apuracana, 500");
 			break;
 		case 2:
-			System.out.println("\nObs. Dr.Samyra atende na Avenida Indianopólis, 1000");
+			System.out.println("\nConsulta agendada com a Dr.Samyra que atende na Avenida Indianopólis, 1000");
 			break;
 			default:
 			System.out.println("\nInvalido!!");
@@ -31,25 +32,32 @@ public class Ginecologista extends Especialidades{
 		// TODO Auto-generated method stub
 		System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
 		dia = leia.nextInt();
+		do {
 		switch(dia) {
 		case 1:
-			System.out.println("\nSegunda-feira");
+			d="Segunda-feira";
 			break;
 		case 2:
-			System.out.println("\nTerça-feira");
+			d="Terça-feira";
 			break;
 		case 3:
-			System.out.println("\nQuarta-feira");
+			
+			d="Quarta-feira";
 			break;
 		case 4:
-			System.out.println("\nQuinta-feira");
+			
+			d="Quinta-feira";
 			break;
 		case 5:
-			System.out.println("\nSexta-feira");
+			
+			d="Sexta-feira";
 			break;
-			default:
-			System.out.println("\nInvalido!!");
+		default:
+			System.out.println("Opção inválida. Digte o dia da semana novamente:");
+			System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
+			dia = leia.nextInt();
 		}
+		}while(dia>0 && dia<=5);
 	}
 	@Override
 	public void horario(int horario) {

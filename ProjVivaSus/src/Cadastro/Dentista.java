@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Dentista extends Especialidades{
 
+	String d, h, m,r;
 	public Dentista() {
 		super("Dentista");
 	}
@@ -31,25 +32,32 @@ public class Dentista extends Especialidades{
 		// TODO Auto-generated method stub
 		System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
 		dia = leia.nextInt();
+		do {
 		switch(dia) {
 		case 1:
-			System.out.println("\nSegunda-feira");
+			d="Segunda-feira";
 			break;
 		case 2:
-			System.out.println("\nTerça-feira");
+			d="Terça-feira";
 			break;
 		case 3:
-			System.out.println("\nQuarta-feira");
+			
+			d="Quarta-feira";
 			break;
 		case 4:
-			System.out.println("\nQuinta-feira");
+			
+			d="Quinta-feira";
 			break;
 		case 5:
-			System.out.println("\nSexta-feira");
+			
+			d="Sexta-feira";
 			break;
-			default:
-			System.out.println("\nInvalido!!");
+		default:
+			System.out.println("Opção inválida. Digte o dia da semana novamente:");
+			System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
+			dia = leia.nextInt();
 		}
+		}while(dia>0 && dia<=5);
 	}
 	@Override
 	public void horario(int horario) {
