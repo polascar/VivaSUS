@@ -5,14 +5,14 @@ public class Paciente{
 	private String nomeCompleto;
 	private String nomeSocial;
 	private String cpf;
-	private String pronome;
+	private int pronome;
 	private String dataNascimento;
 	private String endereco;
-	private String genero;
+	private int genero;
 	private float numSus;
 	private String contatoEmerg;
 	
-	public Paciente(String nomeCompleto,String nomeSocial,String pronome,String genero,String cpf,String dataNascimento,String endereco, float numSus, String contatoEmerg) 
+	public Paciente(String nomeCompleto,String nomeSocial,int pronome,int genero,String cpf,String dataNascimento,String endereco, float numSus, String contatoEmerg) 
 	{
 		//padrão
 		this.nomeCompleto = nomeCompleto;
@@ -26,30 +26,6 @@ public class Paciente{
 		this.contatoEmerg = contatoEmerg;
 	}
 	
-	
-	public Paciente(String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco, float numSus, String contatoEmerg) 
-	{
-		//pessoa trans e não-binária
-		this.nomeSocial = nomeSocial;
-		this.cpf = cpf;
-		this.pronome = pronome;
-		this.dataNascimento = dataNascimento;
-		this.endereco = endereco;
-		this.numSus = numSus;
-		this.contatoEmerg = contatoEmerg;
-	}
-	
-	public void Pessoa(String nomeCompleto,String cpf,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg) 
-	{
-		//pessoa sem pronome e nomeSocial
-		this.nomeCompleto = nomeCompleto;
-		this.cpf = cpf;
-		this.genero = genero;
-		this.dataNascimento = dataNascimento;
-		this.endereco = endereco;
-		this.numSus = numSus;
-		this.contatoEmerg = contatoEmerg;
-	}
 	
 	public String getNomeCompleto() {
 		return nomeCompleto;
@@ -75,11 +51,11 @@ public class Paciente{
 		this.cpf = cpf;
 	}
 
-	public String getPronome() {
+	public int getPronome() {
 		return pronome;
 	}
 
-	public void setPronome(String pronome) {
+	public void setPronome(int pronome) {
 		this.pronome = pronome;
 	}
 
@@ -99,11 +75,11 @@ public class Paciente{
 		this.endereco = endereco;
 	}
 
-	public String getGenero() {
+	public int getGenero() {
 		return genero;
 	}
 
-	public void setGenero(String genero) {
+	public void setGenero(int genero) {
 		this.genero = genero;
 	}
 

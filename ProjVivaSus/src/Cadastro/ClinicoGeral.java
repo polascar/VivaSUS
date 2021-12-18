@@ -1,17 +1,18 @@
 package Cadastro;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ClinicoGeral extends Especialidades{
-	int medico;
-	int dia;
-	int horario;
 	
 	public ClinicoGeral() {
 		super("Clinico Geral");
 	}
 	
+	int medico,dia,horario;
 	Scanner leia = new Scanner (System.in);
+	
+	ArrayList <String> estoque = new ArrayList();
 	
 	@Override
 	public void medico(int medico) {
@@ -69,8 +70,7 @@ public class ClinicoGeral extends Especialidades{
 			default:
 			System.out.println("\nInvalido!!");
 		} 
-		
-		System.out.println("Sua consulta foi agendada com o/a Dr. "+medico+", na"+dia+" ás "+horario);
 	}
+	System.out.print("\nSua consulta foi agendada com o/a Dr. "+medico+", na "+dia+" no horário "+horario);
  
 }
