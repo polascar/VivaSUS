@@ -5,14 +5,13 @@ import java.util.Scanner;
 
 public class ClinicoGeral extends Especialidades{
 	
+	String d, h, m,r;
 	public ClinicoGeral() {
 		super("Clinico Geral");
 	}
 	
 	int medico,dia,horario;
 	Scanner leia = new Scanner (System.in);
-	
-	ArrayList <String> estoque = new ArrayList();
 	
 	@Override
 	public void medico(int medico) {
@@ -21,9 +20,14 @@ public class ClinicoGeral extends Especialidades{
 		switch(medico) {
 		case 1:
 			System.out.println("\nObs. Dr. Ana que atende na Rua Barão do Duprat, 323");
+			m=" Dr. Ana";
+			r="Rua Barão do Duprat, 323";
 			break;
 		case 2:
 			System.out.println("\nObs. Dr. David que atende na Rua Aracatu, 02");
+			m="Dr. Davi";
+			r="Rua Aracatu, 02";
+			
 			break;
 			default:
 			System.out.println("\nInvalido!!");
@@ -35,25 +39,32 @@ public class ClinicoGeral extends Especialidades{
 		// TODO Auto-generated method stub
 		System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
 		dia = leia.nextInt();
+		do {
 		switch(dia) {
 		case 1:
-			System.out.println("\nSegunda-feira");
+			d="Segunda-feira";
 			break;
 		case 2:
-			System.out.println("\nTerça-feira");
+			d="Terça-feira";
 			break;
 		case 3:
-			System.out.println("\nQuarta-feira");
+			
+			d="Quarta-feira";
 			break;
 		case 4:
-			System.out.println("\nQuinta-feira");
+			
+			d="Quinta-feira";
 			break;
 		case 5:
-			System.out.println("\nSexta-feira");
+			
+			d="Sexta-feira";
 			break;
-			default:
-			System.out.println("\nInvalido!!");
+		default:
+			System.out.println("Opção inválida. Digte o dia da semana novamente:");
+			System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
+			dia = leia.nextInt();
 		}
+		}while(dia>1 && dia<5);
 	}
 	
 	@Override
@@ -62,13 +73,17 @@ public class ClinicoGeral extends Especialidades{
 		horario = leia.nextInt();
 		switch(horario) {
 		case 1:
-			System.out.println("\n1-Agendado ás 9:00");
+			h= "9:00";
 			break;
 		case 2:
-			System.out.println("\n2-Agendado ás 11:00");
+			
+			h= "11:00";
 			break;
 			default:
 			System.out.println("\nInvalido!!");
 		} 
+		
+		System.out.println("\nSua consulta foi agendada com o/a "+m+", no Endereço "+r+" na "+d+", ás "+h);
+	
 	} 
 }
