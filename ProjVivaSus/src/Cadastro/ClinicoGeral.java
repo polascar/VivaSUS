@@ -70,7 +70,5 @@ public class ClinicoGeral extends Especialidades{
 			default:
 			System.out.println("\nInvalido!!");
 		} 
-	}
-	System.out.print("\nSua consulta foi agendada com o/a Dr. "+medico+", na "+dia+" no horário "+horario);
- 
+	} 
 }
