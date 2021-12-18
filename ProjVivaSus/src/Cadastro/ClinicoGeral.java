@@ -1,34 +1,28 @@
 package Cadastro;
 
+import java.util.Scanner;
+
 public class ClinicoGeral extends Especialidades{
+	int medico;
+	int dia;
+	int horario;
 	
 	public ClinicoGeral() {
 		super("Clinico Geral");
 	}
 	
+	Scanner leia = new Scanner (System.in);
+	
 	@Override
 	public void medico(int medico) {
 		System.out.println("\nEscolha o médico: "+"\n1-Ana\n2-David");
+		medico = leia.nextInt();
 		switch(medico) {
 		case 1:
-			System.out.println("\nConsulta agendada com a Dr. Ana que atende na Rua Barão do Duprat, 323");
+			System.out.println("\nObs. Dr. Ana que atende na Rua Barão do Duprat, 323");
 			break;
 		case 2:
-			System.out.println("\nConsulta agendada com a Dr. David que atende na Rua Aracatu, 02");
-			break;
-			default:
-			System.out.println("\nInvalido!!");
-		}
-	}
-	@Override
-	public void horario(int horario) {
-		System.out.println("\nEscolha o horario: "+"\n1-9:00\n2-11:00");
-		switch(horario) {
-		case 1:
-			System.out.println("\n1-9:00");
-			break;
-		case 2:
-			System.out.println("\n2-11:00");
+			System.out.println("\nObs. Dr. David que atende na Rua Aracatu, 02");
 			break;
 			default:
 			System.out.println("\nInvalido!!");
@@ -38,26 +32,45 @@ public class ClinicoGeral extends Especialidades{
 	@Override
 	public void dia(int dia) {
 		// TODO Auto-generated method stub
+		System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
+		dia = leia.nextInt();
 		switch(dia) {
 		case 1:
-			System.out.println("\nConsulta agendada para segunda-feira");
+			System.out.println("\nSegunda-feira");
 			break;
 		case 2:
-			System.out.println("\nConsulta agendada para terça-feira");
+			System.out.println("\nTerça-feira");
 			break;
 		case 3:
-			System.out.println("\nConsulta agendada para quarta-feira");
+			System.out.println("\nQuarta-feira");
 			break;
 		case 4:
-			System.out.println("\nConsulta agendada para quinta-feira");
+			System.out.println("\nQuinta-feira");
 			break;
 		case 5:
-			System.out.println("\nConsulta agendada para sexta-feira");
+			System.out.println("\nSexta-feira");
 			break;
 			default:
 			System.out.println("\nInvalido!!");
 		}
 	}
-
-
+	
+	@Override
+	public void horario(int horario) {
+		System.out.println("\nEscolha o horario: "+"\n1-9:00\n2-11:00");
+		horario = leia.nextInt();
+		switch(horario) {
+		case 1:
+			System.out.println("\n1-Agendado ás 9:00");
+			break;
+		case 2:
+			System.out.println("\n2-Agendado ás 11:00");
+			break;
+			default:
+			System.out.println("\nInvalido!!");
+		} 
+		
+		System.out.println("Sua consulta foi agendada com o/a Dr. "+medico+", na"+dia+" ás "+horario);
+	}
+ 
 }

@@ -4,9 +4,6 @@ public interface Consultas{
 	
 	public String nomeInterface = "Consultas";
 	public void Paciente();
-	public void imprimirInfoPadrao();
-	public void imprimirInfoPessoa();
-	public void imprimirInfoSem();
 	public String getNomeCompleto();
 	public void setNomeCompleto();
 	public String getNomeSocial();
@@ -25,7 +22,5 @@ public interface Consultas{
 	public void setNumSus();
 	public String getContatoEmerg();
 	public void setContatoEmerg();
-	public String getRegiao();
-	public void setRegiao();
 	
 }

@@ -11,9 +11,8 @@ public class Paciente{
 	private String genero;
 	private float numSus;
 	private String contatoEmerg;
-	private String regiao;
 	
-	public Paciente(String nomeCompleto,String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg,String regiao) 
+	public Paciente(String nomeCompleto,String nomeSocial,String pronome,String genero,String cpf,String dataNascimento,String endereco, float numSus, String contatoEmerg) 
 	{
 		//padrão
 		this.nomeCompleto = nomeCompleto;
@@ -25,17 +24,10 @@ public class Paciente{
 		this.genero = genero;
 		this.numSus = numSus;
 		this.contatoEmerg = contatoEmerg;
-		this.regiao = regiao;
 	}
 	
-	public void imprimirInfoPadrao() 
-	{
-		System.out.println("\nEssa pessoa é a"+nomeCompleto+" com o CPF "+
-	cpf+". Esta pessoa utiliza o pronome "+pronome+" e o seu gênero é: "+genero+
-	". Sua data de nascimento é: "+dataNascimento+" e com o endereço "+endereco);
-	}
 	
-	public Paciente(String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco, float numSus, String contatoEmerg,String regiao) 
+	public Paciente(String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco, float numSus, String contatoEmerg) 
 	{
 		//pessoa trans e não-binária
 		this.nomeSocial = nomeSocial;
@@ -45,17 +37,9 @@ public class Paciente{
 		this.endereco = endereco;
 		this.numSus = numSus;
 		this.contatoEmerg = contatoEmerg;
-		this.regiao = regiao;
 	}
 	
-	public void imprimirInfoPessoa() 
-	{
-		System.out.println("\nEssa pessoa é a"+nomeSocial+" com o CPF "+
-		cpf+". Esta pessoa utiliza o pronome "+pronome+" e o seu gênero é: "+genero+
-		". Sua data de nascimento é: "+dataNascimento+" e com o endereço "+endereco+".");
-	}
-	
-	public void Pessoa(String nomeCompleto,String cpf,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg,String regiao) 
+	public void Pessoa(String nomeCompleto,String cpf,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg) 
 	{
 		//pessoa sem pronome e nomeSocial
 		this.nomeCompleto = nomeCompleto;
@@ -65,14 +49,6 @@ public class Paciente{
 		this.endereco = endereco;
 		this.numSus = numSus;
 		this.contatoEmerg = contatoEmerg;
-		this.regiao = regiao;
-	}
-	
-	public void imprimirInfoSem() 
-	{
-		System.out.println("\nEssa pessoa é a"+nomeCompleto+" com o CPF "+
-		cpf+". Esta pessoa utiliza o gênero: "+genero+". Sua data de nascimento"
-		+ " é: "+dataNascimento+" e com o endereço "+endereco);
 	}
 	
 	public String getNomeCompleto() {
@@ -145,14 +121,6 @@ public class Paciente{
 
 	public void setContatoEmerg(String contatoEmerg) {
 		this.contatoEmerg = contatoEmerg;
-	}
-
-	public String getRegiao() {
-		return regiao;
-	}
-
-	public void setRegiao(String regiao) {
-		this.regiao = regiao;
 	}
 	
 }
