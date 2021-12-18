@@ -3,11 +3,29 @@ package Cadastro;
 public interface Consultas{
 	
 	public String nomeInterface = "Consultas";
-	public String marcarConsulta();
-	public void dia();
-	public void horario();
-	public void medico();
-	public String getEspecialidade();
-	public void setEspecialidade();
+	public void Paciente();
+	public void imprimirInfoPadrao();
+	public void imprimirInfoPessoa();
+	public void imprimirInfoSem();
+	public String getNomeCompleto();
+	public void setNomeCompleto();
+	public String getNomeSocial();
+	public void setNomeSocial();
+	public String getCpf();
+	public void setCpf();
+	public String getPronome();
+	public void setPronome();
+	public String getDataNascimento();
+	public void setDataNascimento();
+	public String getEndereco();
+	public void setEndereco();
+	public String getGenero();
+	public void setGenero();
+	public float getNumSus();
+	public void setNumSus();
+	public String getContatoEmerg();
+	public void setContatoEmerg();
+	public String getRegiao();
+	public void setRegiao();
 	
 }

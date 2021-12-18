@@ -1,6 +1,6 @@
 package Cadastro;
 
-public class Ginecologista extends Especialidades {
+public class Ginecologista extends Especialidades{
 
 	public Ginecologista() {
 		super("Ginecologista");
@@ -39,7 +39,26 @@ public class Ginecologista extends Especialidades {
 	@Override
 	public void dia(int dia) {
 		// TODO Auto-generated method stub
-		return;
+		switch(dia) {
+		case 1:
+			System.out.println("\nConsulta agendada para segunda-feira");
+			break;
+		case 2:
+			System.out.println("\nConsulta agendada para terça-feira");
+			break;
+		case 3:
+			System.out.println("\nConsulta agendada para quarta-feira");
+			break;
+		case 4:
+			System.out.println("\nConsulta agendada para quinta-feira");
+			break;
+		case 5:
+			System.out.println("\nConsulta agendada para sexta-feira");
+			break;
+			default:
+			System.out.println("\nInvalido!!");
+		}
 	}
+
 
 }

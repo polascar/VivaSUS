@@ -1,6 +1,6 @@
 package Cadastro;
 
-public class Paciente implements Consultas{
+public class Paciente{
 	
 	private String nomeCompleto;
 	private String nomeSocial;
@@ -12,7 +12,6 @@ public class Paciente implements Consultas{
 	private float numSus;
 	private String contatoEmerg;
 	private String regiao;
-	private int dia;
 	
 	public Paciente(String nomeCompleto,String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg,String regiao) 
 	{
@@ -156,67 +155,4 @@ public class Paciente implements Consultas{
 		this.regiao = regiao;
 	}
 	
-	public String marcarConsulta() {
-		// TODO Auto-generated method stub
-		
-		return null;
-	}
-
-	@Override
-	public void dia() {
-		
-		System.out.println("\n------------------------------");
-		System.out.println("\nPor gentileza, selecione algum número a seguir para marcar a consulta: ");
-		System.out.println("\n(1) Segunda-feira");
-		System.out.println("\n(2) Terça-feira");
-		System.out.println("\n(3) Quarta-feira");
-		System.out.println("\n(4) Quinta-feira");
-		System.out.println("\n(5) Sexta-feira");
-		// TODO Auto-generated method stub
-		switch(dia) {
-		case 1:
-			System.out.println("\nA consulta foi agendada para Segunda-feira");
-			break;
-		case 2: 
-			System.out.println("\nA consulta foi agendada para Terça-feira");
-			break;
-		case 3: 
-			System.out.println("\nA consulta foi agendada para Quarta-feira");
-			break;
-		case 4: 
-			System.out.println("\nA consulta foi agendada para Quinta-feira");
-			break;
-		case 5:
-			System.out.println("\nA consulta foi agendada para Sexta-feira");
-			break;
-			default:
-				System.out.println("\nO dia digitado foi inválido! Por favor, digite um número de 1 até 5.");
-		}
-	}
-
-	@Override
-	public void horario() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void medico() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public String getEspecialidade() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void setEspecialidade() {
-		// TODO Auto-generated method stub
-		
-	}
-	
-		
 }

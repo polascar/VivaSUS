@@ -5,10 +5,7 @@ public class Dentista extends Especialidades{
 	public Dentista() {
 		super("Dentista");
 	}
-	@Override
-	public String getEspecialidade() {
-		return "\n\tDentista";
-	}
+	
 	@Override
 	public void medico(int medico) {
 		System.out.println("\nEscolha o Dentista: "+"\n1-Maria\n2-Paulo");
@@ -60,4 +57,5 @@ public class Dentista extends Especialidades{
 			System.out.println("\nInvalido!!");
 		}
 	}
+
 }

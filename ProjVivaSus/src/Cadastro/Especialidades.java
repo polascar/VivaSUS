@@ -17,5 +17,5 @@ public abstract class Especialidades {
 	public void setEspecialidade(String especialidades) {
 		Especialidades = especialidades;
 	}
-	
+		
 }

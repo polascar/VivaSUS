@@ -7,10 +7,6 @@ public class ClinicoGeral extends Especialidades{
 	}
 	
 	@Override
-	public String getEspecialidade() {
-		return "\n\tClinico Geral";
-	}
-	@Override
 	public void medico(int medico) {
 		System.out.println("\nEscolha o médico: "+"\n1-Ana\n2-David");
 		switch(medico) {
@@ -62,5 +58,6 @@ public class ClinicoGeral extends Especialidades{
 			System.out.println("\nInvalido!!");
 		}
 	}
+
 
 }
