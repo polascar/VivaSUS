@@ -1,9 +1,9 @@
-package Cadastro;
+package VivaSUS.ProjVivaSus.src.Cadastro;
 
 public class Ginecologista extends Especialidades {
 
-	public Ginecologista() {
-		super("Ginecologista");
+	public Ginecologista(String pessoaMedica) {
+		super("Ginecologista",pessoaMedica);
 	}
 	
 	@Override

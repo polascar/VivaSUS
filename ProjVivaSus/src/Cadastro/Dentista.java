@@ -1,10 +1,12 @@
-package Cadastro;
+package VivaSUS.ProjVivaSus.src.Cadastro;
 
 public class Dentista extends Especialidades{
-
-	public Dentista() {
-		super("Dentista");
+	
+	//construtor
+	public Dentista(String pessoaMedica) {
+		super("Dentista", pessoaMedica);
 	}
+	
 	@Override
 	public String getEspecialidade() {
 		return "\n\tDentista";
