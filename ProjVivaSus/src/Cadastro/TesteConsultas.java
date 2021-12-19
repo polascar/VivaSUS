@@ -25,11 +25,14 @@ public class TesteConsultas {
 		System.out.println("\nEntre com o seu Nome Completo: ");
 		nc=leia.nextLine();
 		pc.setNomeCompleto(nc);
+		
 		System.out.println("\nEntre com o seu Nome Social: ");
 		ns=leia.nextLine();
 		pc.setNomeSocial(ns);
+		
 		System.out.println("\nEntre com o seu Pronome: "+"\n1- Ela/Dela \n2- Ele/Dele \n3- Elu/Delu");
 		p=leia.nextInt();
+		
 		switch(p) {
 		case 1:
 			System.out.println("");
@@ -41,12 +44,15 @@ public class TesteConsultas {
 			System.out.println("");
 			break;
 			default:
-			System.out.println("\nInvalido!!");
+			System.out.println("Opção inválida. Digte o horário novamente:");
 		}
 		pc.setPronome(p);
+		
 		System.out.println("\nEntre com o seu Genero: "+"\n1- Feminino \n2- Masculino \n3-Não Binário \n4-Trans");
 		g=leia.nextInt();
+		
 		pc.setGenero(g);
+		
 		switch(g) {
 		case 1:
 			System.out.println("");
@@ -108,9 +114,6 @@ public class TesteConsultas {
 			 esp.medico(1);
 			 esp.dia(1);
 			 esp.horario(1);
-		 }
-		
-		 
+		 }	 
 	}
-
 }
