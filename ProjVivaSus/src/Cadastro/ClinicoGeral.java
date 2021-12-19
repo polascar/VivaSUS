@@ -6,10 +6,13 @@ public class ClinicoGeral extends Especialidades{
 		super("Clinico Geral");
 	}
 	
+	/*(redundância com get de Especialidades(classe))
 	@Override
 	public String getEspecialidade() {
 		return "\n\tClinico Geral";
+		
 	}
+	*/
 	@Override
 	public void medico(int medico) {
 		System.out.println("\nEscolha o médico: "+"\n1-Ana\n2-David");

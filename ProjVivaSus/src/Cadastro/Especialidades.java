@@ -2,11 +2,8 @@ package Cadastro;
 
 public abstract class Especialidades {
 
-	private String Especialidades;
+	private String especialidade;
 	
-	abstract public void medico(int nome);
-	abstract public void horario(int horario);
-	abstract public void dia(int dia);
 	
 	public Especialidades(String Especialidades) {
 		this.Especialidades = Especialidades;

@@ -1,6 +1,11 @@
-package Cadastro;
+package VivaSUS.ProjVivaSus.src.Cadastro;
 
-public class Paciente implements Consultas{
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+
+public class Paciente{
 	
 	private String nomeCompleto;
 	private String nomeSocial;
@@ -9,71 +14,43 @@ public class Paciente implements Consultas{
 	private String dataNascimento;
 	private String endereco;
 	private String genero;
-	private float numSus;
+	private String numSus;
 	private String contatoEmerg;
 	private String regiao;
-	private int dia;
+	private List <Consulta> listaConsultas;
 	
-	public Paciente(String nomeCompleto,String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg,String regiao) 
+	
+	public Paciente(String cpf,String dataNascimento,String endereco,String genero, String numSus) 
 	{
-		//padrão
-		this.nomeCompleto = nomeCompleto;
-		this.nomeSocial = nomeSocial;
+		//infos obrigatórias para qualquer paciente
 		this.cpf = cpf;
-		this.pronome = pronome;
-		this.dataNascimento = dataNascimento;
-		this.endereco = endereco;
-		this.genero = genero;
-		this.numSus = numSus;
-		this.contatoEmerg = contatoEmerg;
-		this.regiao = regiao;
-	}
-	
-	public void imprimirInfoPadrao() 
-	{
-		System.out.println("\nEssa pessoa é a"+nomeCompleto+" com o CPF "+
-	cpf+". Esta pessoa utiliza o pronome "+pronome+" e o seu gênero é: "+genero+
-	". Sua data de nascimento é: "+dataNascimento+" e com o endereço "+endereco);
-	}
-	
-	public Paciente(String nomeSocial,String cpf,String pronome,String dataNascimento,String endereco, float numSus, String contatoEmerg,String regiao) 
-	{
-		//pessoa trans e não-binária
-		this.nomeSocial = nomeSocial;
-		this.cpf = cpf;
-		this.pronome = pronome;
 		this.dataNascimento = dataNascimento;
 		this.endereco = endereco;
 		this.numSus = numSus;
-		this.contatoEmerg = contatoEmerg;
-		this.regiao = regiao;
+		//iniciando uma lista para quando precisarmos mostrar consultas, é só chamar
+		this.listaConsultas= new ArrayList<Consulta>();
 	}
 	
-	public void imprimirInfoPessoa() 
+	public void imprimirInfos () throws IllegalAccessException
 	{
-		System.out.println("\nEssa pessoa é a"+nomeSocial+" com o CPF "+
-		cpf+". Esta pessoa utiliza o pronome "+pronome+" e o seu gênero é: "+genero+
-		". Sua data de nascimento é: "+dataNascimento+" e com o endereço "+endereco+".");
+		
+		//informações obrigatórias
+		String infos = "\nO número do seu CPF é "+
+		cpf+".\nSua data de nascimento é: "+dataNascimento+"\ne o seu endereço é "+endereco+"\n";
+		
+		//informações opcionais 
+		for (Field f : getClass().getDeclaredFields())
+	        if (f.get(this) != null)
+	        {
+	        	infos+=f.getName()+": "+ f.get(this)+"\n";
+	        } 
+		System.out.print(infos);	
 	}
-	
-	public void Pessoa(String nomeCompleto,String cpf,String dataNascimento,String endereco,String genero, float numSus, String contatoEmerg,String regiao) 
+	public void marcarConsulta (Date dataHorario, Especialidades especialidade)
 	{
-		//pessoa sem pronome e nomeSocial
-		this.nomeCompleto = nomeCompleto;
-		this.cpf = cpf;
-		this.genero = genero;
-		this.dataNascimento = dataNascimento;
-		this.endereco = endereco;
-		this.numSus = numSus;
-		this.contatoEmerg = contatoEmerg;
-		this.regiao = regiao;
-	}
-	
-	public void imprimirInfoSem() 
-	{
-		System.out.println("\nEssa pessoa é a"+nomeCompleto+" com o CPF "+
-		cpf+". Esta pessoa utiliza o gênero: "+genero+". Sua data de nascimento"
-		+ " é: "+dataNascimento+" e com o endereço "+endereco);
+		Consulta consulta = new Consulta(dataHorario, especialidade);
+		this.listaConsultas.add(consulta);
+		System.out.print("Consulta marcada com sucesso!");
 	}
 	
 	public String getNomeCompleto() {
@@ -132,11 +109,11 @@ public class Paciente implements Consultas{
 		this.genero = genero;
 	}
 
-	public float getNumSus() {
+	public String getNumSus() {
 		return numSus;
 	}
 
-	public void setNumSus(float numSus) {
+	public void setNumSus(String numSus) {
 		this.numSus = numSus;
 	}
 
@@ -162,7 +139,7 @@ public class Paciente implements Consultas{
 		return null;
 	}
 
-	@Override
+	/*@Override
 	public void dia() {
 		
 		System.out.println("\n------------------------------");
@@ -217,6 +194,6 @@ public class Paciente implements Consultas{
 		// TODO Auto-generated method stub
 		
 	}
-	
+	*/
 		
 }
