@@ -10,7 +10,7 @@ public class TesteConsultas {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		boolean continueLoop = true;
-		int op=0,nsus,g=0,p=0,i=0,f=0,k=0,l=0,o=0,t=0;
+		int op=0,nsus,g=0,p=0,i=0,f=0,k=0,l=0,o=0;
 		String nc,ns,c,dn,end,ce;
 		ArrayList <String> agendamentosDentista = new ArrayList();
 		ArrayList <String> agendamentosGinecologista = new ArrayList();	
@@ -182,7 +182,7 @@ public class TesteConsultas {
 		}while(k<1);
 		
 		
-		System.out.println("\nEntre com o seu Endereço: ");
+		System.out.println("\nEntre com o seu Endereço:* ");
 		end=leia.nextLine();
 		do {	
 		pc.setEndereco(end);
@@ -195,17 +195,19 @@ public class TesteConsultas {
 		}
 		}while(l<1);
 		
-		
+		do {
+		continueLoop = true;
 		try {
-		System.out.println("\nEntre com o seu Número do Sus:* ");
+		System.out.println("\nEntre com o seu Número do Sus: ");
 		nsus=leia.nextInt();
+	
 		pc.setNumSus(nsus);}catch(InputMismatchException inputMismatchException)
-		{
+		{	continueLoop = false;
 			System.err.printf("\nException: %s\n",inputMismatchException);
 			leia.nextLine();
 			System.out.println("\nVocê deve entrar com um valor do tipo inteiro.\nPor favor, tente novamente...");
 		}
-		
+		}while(continueLoop==false);
 		
 		
 		System.out.println("\nEntre com o seu Contato de Emergencia: ");
