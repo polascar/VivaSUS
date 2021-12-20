@@ -1,10 +1,11 @@
 package Cadastro;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Dentista extends Especialidades{
 
-	String d, h, m,r;
+	String d, h, m,r,dhm;
 	public Dentista() {
 		super("Dentista");
 	}
@@ -21,11 +22,13 @@ public class Dentista extends Especialidades{
 				System.out.println("\nObs. Dr. Maria atende na Avenida Monteiro Lobato, 267");
 				m="Dr. Maria";
 				r="Avenida Monteiro Lobato, 267";
+			
 				break;
 			case 2:
 				System.out.println("\nObs. Dr. Paulo atende na Av Washigton Luis, 400");
 				m="Dr. Paulo";
 				r="Av Washigton Luis, 400";
+			
 				break;
 			default:
 				System.out.println("\\nOpção inválida. Escolha o Dentista novamente:");
@@ -37,11 +40,13 @@ public class Dentista extends Especialidades{
 					System.out.println("\nObs. Dr. Maria atende na Avenida Monteiro Lobato, 267");
 					m="Dr. Maria";
 					r="Avenida Monteiro Lobato, 267";
+					
 					break;
 				case 2:
 					System.out.println("\nObs. Dr. Paulo atende na Av Washigton Luis, 400");
 					m="Dr. Paulo";
 					r="Av Washigton Luis, 400";
+					
 					break;
 				}
 			}
@@ -102,7 +107,7 @@ public class Dentista extends Especialidades{
 		do {
 			switch(horario) {
 			case 1:
-				h="13:00";
+				h="9:00";
 				break;
 			case 2:
 				h="16:00";
@@ -114,15 +119,13 @@ public class Dentista extends Especialidades{
 			
 				switch(horario) {
 				case 1:
-					h="13:00";
+					h="9:00";
 					break;
 				case 2:
 					h="16:00";
 					break;
 				}	
 			}
-		}while(horario<1 || horario>2); 
-		
-		System.out.println("\nSua consulta foi agendada com o/a "+m+", no Endereço "+r+" na "+d+", ás "+h);
+		}while(horario<1 || horario>2); 	
 	}
 }

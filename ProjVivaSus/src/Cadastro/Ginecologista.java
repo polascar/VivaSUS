@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Ginecologista extends Especialidades{
 
-	String d, h, m,r;
+	String d, h, m,r,dhm;
 	public Ginecologista() {
 		super("Ginecologista");
 	}
@@ -21,11 +21,13 @@ public class Ginecologista extends Especialidades{
 				System.out.println("\nObs. Dr.Sandra atende na rua Apuracana, 500");
 				m="Dr.Sandra";
 				r="rua Apuracana, 500";
+				
 				break;
 			case 2:
 				System.out.println("\nObs. Dr.Samyra atende na Avenida Indianopólis, 1000");
 				m="Dr.Samyra";
 				r="Avenida Indianopólis, 1000";
+				
 				break;
 			default:
 				System.out.println("\nOpção inválida. Escolha o Ginecologista novamente:");
@@ -36,11 +38,13 @@ public class Ginecologista extends Especialidades{
 					System.out.println("\nObs. Dr.Sandra atende na rua Apuracana, 500");
 					m="Dr.Sandra";
 					r="rua Apuracana, 500";
+				
 					break;
 				case 2:
 					System.out.println("\nObs. Dr.Samyra atende na Avenida Indianopólis, 1000");
 					m="Dr.Samyra";
 					r="Avenida Indianopólis, 1000";
+					
 					break;
 				}
 			}
@@ -61,23 +65,38 @@ public class Ginecologista extends Especialidades{
 			d="Terça-feira";
 			break;
 		case 3:
-			
 			d="Quarta-feira";
 			break;
 		case 4:
-			
 			d="Quinta-feira";
 			break;
 		case 5:
-			
 			d="Sexta-feira";
 			break;
 		default:
 			System.out.println("Opção inválida. Digte o dia da semana novamente:");
 			System.out.println("\nEscolha o dia da semana: "+"\n1 - Segunda-feira \n2 - Terça-feira \n3 - Quarta-feira \n4 - Quinta-feira \n5 - Sexta-feira");
 			dia = leia.nextInt();
+			
+			switch(dia) {
+			case 1:
+				d="Segunda-feira";
+				break;
+			case 2:
+				d="Terça-feira";
+				break;
+			case 3:
+				d="Quarta-feira";
+				break;
+			case 4:
+				d="Quinta-feira";
+				break;
+			case 5:
+				d="Sexta-feira";
+				break;
+			}	
 		}
-		}while(dia>0 && dia<=5);
+		}while(dia<1 || dia>5);
 	}
 	@Override
 	public void horario(int horario) {
@@ -106,7 +125,5 @@ public class Ginecologista extends Especialidades{
 				}
 			}
 		}while(horario<1 || horario>2);
-		
-		System.out.println("\nSua consulta foi agendada com o/a "+m+", no Endereço "+r+" na "+d+", ás "+h);
 	}
 }

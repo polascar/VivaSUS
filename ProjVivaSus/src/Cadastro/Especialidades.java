@@ -1,5 +1,7 @@
 package Cadastro;
 
+import java.util.ArrayList;
+
 public abstract class Especialidades {
 
 	private String Especialidades;
@@ -7,7 +9,6 @@ public abstract class Especialidades {
 	abstract public void medico(int nome);
 	abstract public void horario(int horario);
 	abstract public void dia(int dia);
-	
 	public Especialidades(String Especialidades) {
 		this.Especialidades = Especialidades;
 	}

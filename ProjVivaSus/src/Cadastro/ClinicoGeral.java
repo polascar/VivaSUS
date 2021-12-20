@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ClinicoGeral extends Especialidades{
 	
-	String d, h, m,r;
+	String d, h, m,r,dhm;
 	public ClinicoGeral() {
 		super("Clinico Geral");
 	}
@@ -22,11 +22,13 @@ public class ClinicoGeral extends Especialidades{
 				System.out.println("\nObs. Dr. Ana que atende na Rua Barão do Duprat, 323");
 				m="Dr. Ana";
 				r="Rua Barão do Duprat, 323";
+				
 				break;
 			case 2:
 				System.out.println("\nObs. Dr. David que atende na Rua Aracatu, 02");
 				m="Dr. Davi";
 				r="Rua Aracatu, 02";
+				
 				break;
 			default:
 				System.out.println("\nOpção inválida. Escolha o médico novamente:");
@@ -37,11 +39,13 @@ public class ClinicoGeral extends Especialidades{
 					System.out.println("\nObs. Dr. Ana que atende na Rua Barão do Duprat, 323");
 					m="Dr. Ana";
 					r="Rua Barão do Duprat, 323";
+				
 					break;
 				case 2:
 					System.out.println("\nObs. Dr. David que atende na Rua Aracatu, 02");
 					m="Dr. Davi";
 					r="Rua Aracatu, 02";
+					
 					break;
 				}
 			}
@@ -127,7 +131,5 @@ public class ClinicoGeral extends Especialidades{
 				}
 			} 
 		}while(horario<1 || horario>2);
-		
-		System.out.println("\nSua consulta foi agendada com o/a "+m+", no Endereço "+r+" na "+d+", ás "+h);
 	} 
 }
