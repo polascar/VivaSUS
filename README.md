@@ -20,7 +20,7 @@
 
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/karen-gabrieli-viana/)](https://www.linkedin.com/in/karen-gabrieli-viana/) 
 
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/sabrinamouragandra/)](https://www.linkedin.com/in/sabrinamouragandra/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/sabrinamouragandra/)](https://www.linkedin.com/in/sabrinamouragandra/) 
 
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/)](https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/) 
 
