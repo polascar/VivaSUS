@@ -40,6 +40,6 @@
 
 ### Feito com ❤️ 
 
-### 👋🏽 Qualquer toque, entre em contato!
+### 👋🏽 Qualquer dúvida, entre em contato!
 
 ### E a nossa [apresentação](https://bit.ly/3H1Dos0) feito pelo Canvas:
