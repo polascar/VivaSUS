@@ -42,4 +42,4 @@
 
 ### 👋🏽 Qualquer dúvida, entre em contato!
 
-### E a nossa [apresentação](https://bit.ly/3H1Dos0) através de Canvas:
+### E a nossa [apresentação](https://bit.ly/3H1Dos0) feita através de Canvas:
