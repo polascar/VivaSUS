@@ -15,21 +15,27 @@
 ### Agradeço a minha equipe maravilhose que foi formada por: 
 
 - Scarlatt Luz:
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/scarlatt-luz/)](https://www.linkedin.com/in/scarlatt-luz/) 
 
 - Bianca Piña: 
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/biancapi%C3%B1alins/)](https://www.linkedin.com/in/biancapi%C3%B1alins/) 
 
 - Karen Viana: 
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/karen-gabrieli-viana/)](https://www.linkedin.com/in/karen-gabrieli-viana/) 
 
 - Sabrina Moura: 
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/sabrinamouragandra/)](https://www.linkedin.com/in/sabrinamouragandra/) 
 
 - Vitória Oliveira: 
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/)](https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/) 
 
 - William Santos:
+
 [![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/williamrsh/)](https://www.linkedin.com/in/williamrsh/) 
 
 ### Feito com ❤️ 
