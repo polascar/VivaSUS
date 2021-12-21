@@ -42,8 +42,4 @@
 
 ### 👋🏽 Qualquer toque, entre em contato!
 
-### E a nossa apresentação feito pelo Canvas:
-
-[Apresentação] (https://bit.ly/3H1Dos0)
-
-#007396
+### E a nossa [apresentação](https://bit.ly/3H1Dos0) feito pelo Canvas:
