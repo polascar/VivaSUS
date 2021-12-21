@@ -2,7 +2,7 @@
 
 # VivaSUS
 
-### É um sistema em Java #007396 para marcar consultas no SUS e não precisaríamos enfrentar as filas. Digo isto, olhando fatos reais que acontece todos os dias em nossa sociedade.
+### É um sistema em Java para marcar consultas no SUS e não precisaríamos enfrentar as filas. Digo isto, olhando fatos reais que acontece todos os dias em nossa sociedade.
 
 ### > É um tema importantíssimo em nosso Brasil onde milhões de pessoas dependem todos os dias.
 
@@ -45,3 +45,5 @@
 ### E a nossa apresentação feito pelo Canvas:
 
 [Apresentação] (https://bit.ly/3H1Dos0)
+
+#007396
