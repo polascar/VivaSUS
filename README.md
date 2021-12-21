@@ -14,17 +14,17 @@
 
 ### Agradeço a minha equipe maravilhose que foi formada por: 
 
-[![Linkedin Badge](https://img.shields.io/badge/Scarlatt-Luz-red&link=https://www.linkedin.com/in/scarlatt-luz/)](https://www.linkedin.com/in/scarlatt-luz/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/scarlatt-luz/)](https://www.linkedin.com/in/scarlatt-luz/) 
 
-[![Linkedin Badge](https://img.shields.io/badge/Bianca-Pi%C3%B1a-brightgreen&link=https://www.linkedin.com/in/biancapi%C3%B1alins/)](https://www.linkedin.com/in/biancapi%C3%B1alins/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/biancapi%C3%B1alins/)](https://www.linkedin.com/in/biancapi%C3%B1alins/) 
 
-[![Linkedin Badge](https://img.shields.io/badge/Karen%20Gabrieli-Viana%20-orange&link=https://www.linkedin.com/in/karen-gabrieli-viana/)](https://www.linkedin.com/in/karen-gabrieli-viana/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/karen-gabrieli-viana/)](https://www.linkedin.com/in/karen-gabrieli-viana/) 
 
-[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/sabrinamouragandra/)](https://www.linkedin.com/in/sabrinamouragandra/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/sabrinamouragandra/)](https://www.linkedin.com/in/sabrinamouragandra/) 
 
-[![Linkedin Badge](https://img.shields.io/badge/Vit%C3%B3ria-Oliveira-blue&link=https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/)](https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/)](https://www.linkedin.com/in/vit%C3%B3ria-santos-oliveira-she-her-53755b189/) 
 
-[![Linkedin Badge](https://img.shields.io/badge/William-Santos-yellowgreen&link=https://www.linkedin.com/in/williamrsh/)](https://www.linkedin.com/in/williamrsh/) 
+[![Linkedin Badge](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/williamrsh/)](https://www.linkedin.com/in/williamrsh/) 
 
 ### Feito com ❤️ 
 
