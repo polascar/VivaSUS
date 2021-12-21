@@ -6,13 +6,13 @@
 
 > É um tema importantíssimo em nosso Brasil onde milhões de pessoas dependem todos os dias.
 
-### Se tiver com dúvidas sobre o tema, apenas dê um google da seguinte forma: "fila sus".
+#### Se tiver com dúvidas sobre o tema, apenas dê um google da seguinte forma: "fila sus".
 
 ### Pensamos nisso, pois analisamos em grupo os pontos que a ODS/ONU (United Nations), Objetivos de Desenvolvimento Sustentável no Brasil, propõe ser realizade até 2030. E vimos que a Saúde e Bem-Estar é o ponto forte que atinge todes do nosso grupo.
 
 ### Para além disto, abordamos outros dois pontos importantes da ODS, que são eles: a (9) Indústria, Inovação e Infraestrutura e (10) Redução das Desigualdades; pois estamos inovando um sistema que já se encontra instável e quando o paciente fosse realizar o cadastro poderia informar desde Nome Social, Pronomes que gostaria que fosse tratade e gênero.
 
-### Agradeço a minha equipe maravilhose que foi formada por: 
+#### Agradeço a minha equipe maravilhose que foi formada por: 
 
 - Scarlatt Luz:
 
